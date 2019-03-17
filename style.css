@@ -1,0 +1,417 @@
+/* core styles */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	color: #878a8d;
+}
+h1 {
+	margin: 0;
+	padding-bottom: 100px;
+	font-size: 4rem;
+}
+h3 {
+	margin: 0;
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #878a8d;
+}
+p {
+	margin-bottom: 40px;
+	padding: 1em 0;
+	font-size: 1rem;
+	font-weight: 300;
+	color: #878a8d;
+}
+ol,
+ul {
+	padding: 0;
+	margin: 0;
+}
+.btn {
+	display: inline-block;
+	background-color: #4688f1;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 0.5em 2em;
+	margin: 0.5em 0;
+}
+.btn:hover {
+	background: #000630;
+	color: #4688f1;
+}
+
+/* nav section */
+.nav {
+	width: 100%;
+	background-color: #ffffff;
+	position: relative;
+	border-bottom: 1px solid #b0b3b3;
+	height: 70px;
+}
+
+.nav > .nav-header {
+	display: inline;
+}
+
+.logo {
+	display: block;
+	float: left;
+	margin: 20px 40px;
+	width: 110px;
+}
+
+.nav > .nav-btn {
+	display: none;
+}
+
+.nav > .nav-links {
+	display: inline;
+	float: right;
+	font-size: 1rem;
+	margin-right: 30px;
+}
+
+.nav > .nav-links > a {
+	display: inline-block;
+	padding: 30px 10px;
+	text-decoration: none;
+	color: #878a8d;
+}
+
+.nav > .nav-links > a:hover {
+	background-color: rgba(223, 223, 223, 0.3);
+	border-radius: 10px;
+	color: black;
+}
+
+.nav > #nav-check {
+	display: none;
+}
+
+/* general section */
+.introduce,
+.camera,
+.photo,
+.search,
+.personal,
+.charge,
+.accessories,
+.transfer {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.introduce,
+.photo,
+.charge,
+.transfer {
+	background-color: #f6f6f6;
+}
+
+.left-camera,
+.left-search,
+.left-charge,
+.left-transfer {
+	margin: auto 90px;
+}
+.right-box,
+.right-photo,
+.right-personal,
+.right-accessories,
+.right-transfer {
+	margin: auto 90px;
+}
+/* google section */
+.google {
+	min-height: 550px;
+}
+.left-section {
+	background: white url(images/phones-1.png);
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 550px;
+	width: 100%;
+	position: absolute;
+	padding: 10vh 0 0 5vw;
+	margin-top: 10vh;
+}
+.left-section .g-logo {
+	width: 80px;
+	height: auto;
+}
+.logo-gray {
+	padding-top: 50px;
+	width: 100px;
+}
+.avenir {
+	padding-bottom: 70px;
+}
+.link {
+	color: #4688f1;
+	margin-left: 20px;
+}
+/* introduce section */
+.introduce {
+	margin-top: 10vh;
+}
+.left-box {
+	margin-left: 80px;
+	margin-top: 50px;
+}
+/* personal section */
+.left-personal {
+	margin: 50px;
+}
+/* photo section */
+.left-photo {
+	margin-left: 130px;
+}
+.photo {
+	padding-top: 10vh;
+}
+
+/* search font color is different  */
+.search h3,
+.search p {
+	color: black;
+}
+.search {
+	background: #ffffff url(images/landscape.jpg) no-repeat;
+	background-size: cover;
+}
+.right-search {
+	margin-right: 100px;
+	margin-top: 50px;
+}
+/* info section */
+.info {
+	background-color: #e3e3e3;
+	max-width: 100%;
+	margin: auto;
+	padding: 50px 50px;
+	color: #aaadad;
+	font-size: 0.8rem;
+}
+/* responsive section */
+@media (max-width: 650px) {
+	.nav > .nav-btn {
+		display: inline-block;
+		position: absolute;
+		right: 40px;
+		top: 0px;
+	}
+	.nav > .nav-btn > label {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		padding: 13px;
+	}
+	.nav > .nav-btn > label:hover {
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.nav > .nav-btn > label > span {
+		display: block;
+		width: 25px;
+		height: 10px;
+		border-top: 2px solid #5c5c5c;
+	}
+	.nav > .nav-links {
+		position: absolute;
+		display: block;
+		width: 100%;
+		background-color: #dfdfdf;
+		height: 0px;
+		transition: all 0.6s ease-in;
+		overflow-y: hidden;
+		top: 70px;
+		left: 0px;
+		z-index: 5;
+	}
+	.nav > .nav-links > a {
+		display: block;
+		width: 100%;
+	}
+	.nav > #nav-check:not(:checked) + .nav-links {
+		height: 0px;
+	}
+	.nav > #nav-check:checked + .nav-links {
+		height: calc(100vh - 50px);
+		overflow-y: auto;
+	}
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+	.google {
+		min-height: 450px;
+	}
+	.left-section {
+		padding: 0 0 0 5vw;
+		height: 450px;
+	}
+	.left-section .g-logo {
+		width: 80px;
+		height: auto;
+	}
+	.logo-gray {
+		padding-top: 0px;
+		width: 100px;
+	}
+	.avenir {
+		padding-bottom: 150px;
+	}
+	.link {
+		color: #4688f1;
+		margin-left: 20px;
+	}
+	h3 {
+		font-size: 1.1rem;
+		font-weight: 500;
+	}
+	p {
+		margin-bottom: 30px;
+		font-size: 0.8rem;
+	}
+	.btn {
+		font-size: 1.1rem;
+		padding: 0.4em 1.1em;
+		margin: 0.4em 0;
+	}
+	.left-personal {
+		margin: 20px;
+	}
+
+	.right-box,
+	.right-photo,
+	.right-personal,
+	.right-accessories,
+	.right-transfer {
+		margin: auto 50px;
+	}
+	.left-camera,
+	.left-search,
+	.left-charge,
+	.left-transfer {
+		margin: auto 50px;
+	}
+}
+
+@media (max-width: 800px) {
+	.google {
+		min-height: 250px;
+	}
+	.left-section {
+		height: 250px;
+		width: 100%;
+		position: absolute;
+		padding: 0 0 0 10vw;
+		margin-top: 10vh;
+	}
+	.pixel {
+		margin-top: -30px;
+	}
+	.left-section .g-logo {
+		width: 50px;
+		height: auto;
+	}
+	.logo-gray {
+		padding-top: 0px;
+		width: 60px;
+	}
+	.avenir {
+		padding-bottom: 100px;
+		width: 90px;
+	}
+	.link {
+		display: none;
+	}
+	.btn {
+		font-size: 1rem;
+		padding: 0.3em 1em;
+		margin: 0.3em 0;
+	}
+	h1 {
+		padding-bottom: 100px;
+		font-size: 4rem;
+	}
+	h3 {
+		margin: 0;
+		font-size: 1.4rem;
+		font-weight: 400;
+		color: #878a8d;
+	}
+	p {
+		margin-bottom: 40px;
+		padding: 1em 0;
+		font-size: 1rem;
+		font-weight: 300;
+		color: #878a8d;
+	}
+	h3 {
+		font-size: 1.1rem;
+		font-weight: 500;
+	}
+	p {
+		margin-bottom: 30px;
+		font-size: 0.8rem;
+	}
+	.left-personal {
+		margin: 20px;
+	}
+
+	.right-box,
+	.right-photo,
+	.right-personal,
+	.right-accessories,
+	.right-transfer {
+		margin: auto 20px;
+	}
+	.left-camera,
+	.left-search,
+	.left-charge,
+	.left-transfer {
+		margin: 50px 0 auto 50px;
+	}
+	.introduce,
+	.photo,
+	.search,
+	.camera,
+	.personal,
+	.charge,
+	.accessories,
+	.transfer {
+		min-height: 400px;
+	}
+
+	.right-camera,
+	.left-photo,
+	.right-photo,
+	.right-charge,
+	.right-personal,
+	.left-box,
+	.right-search {
+		height: 400px;
+	}
+	.right-search {
+		margin-right: 50px;
+	}
+	.left-personal {
+		width: 50%;
+		height: 50%;
+	}
+	.left-photo {
+		margin-left: 50px;
+	}
+	.left-box {
+		margin-left: 20px;
+	}
+	.personal h3 {
+		padding-top: 30px;
+	}
+}
