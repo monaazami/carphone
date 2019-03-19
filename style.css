@@ -10,19 +10,23 @@ body {
 	line-height: 1.5;
 	color: #878a8d;
 }
+h1 {
+	font-family: 'avenir';
+	font-size: 4.2rem;
+	padding: 0;
+	margin: 0;
+}
 
 h3 {
 	margin: 0;
 	font-size: 1.4rem;
 	font-weight: 300;
-	color: #878a8d;
 	padding-bottom: 1em;
 }
 p {
 	margin: 0;
 	padding-bottom: 3em;
 	font-size: 1rem;
-	color: #878a8d;
 	text-align: justify;
 }
 div,
@@ -53,7 +57,7 @@ ul {
 .gray-back {
 	background-color: #f6f6f6;
 }
-.section {
+section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -123,6 +127,7 @@ ul {
 .google {
 	display: flex;
 	flex-direction: column;
+	margin-top: -50px;
 }
 .pixel {
 	padding-top: 50px;
@@ -134,11 +139,10 @@ ul {
 }
 .g-logo {
 	width: 80px;
-	margin-bottom: 110px;
+	margin-bottom: 90px;
 }
 .g-logo-gray {
 	width: 110px;
-	margin-bottom: 10px;
 }
 .avenir {
 	width: 200px;
@@ -163,7 +167,6 @@ ul {
 .search {
 	background: #ffffff url(images/landscape.png) no-repeat;
 	background-size: cover;
-	height: 85vh;
 }
 .search h3,
 .search p {
@@ -186,9 +189,9 @@ ul {
 
 /* responsive section */
 @media (min-width: 950px) and (max-width: 1200px) {
-	.search {
+	/* .search {
 		height: 70vh;
-	}
+	} */
 }
 @media (min-width: 790px) and (max-width: 950px) {
 	h3 {
@@ -196,6 +199,9 @@ ul {
 	}
 	p {
 		font-size: 0.9rem;
+	}
+	h1 {
+		font-size: 3.5rem;
 	}
 	.g-logo {
 		width: 70px;
@@ -215,9 +221,6 @@ ul {
 	}
 	.watch {
 		font-size: 0.8rem;
-	}
-	.search {
-		height: 60vh;
 	}
 }
 
@@ -276,6 +279,9 @@ ul {
 	p {
 		font-size: 0.7rem;
 	}
+	h1 {
+		font-size: 3rem;
+	}
 	.g-logo {
 		width: 40px;
 		margin-bottom: 40px;
@@ -303,9 +309,6 @@ ul {
 		width: 60%;
 		height: auto;
 	}
-	.search {
-		height: 40vh;
-	}
 	.info {
 		font-size: 0.6rem;
 	}
@@ -315,7 +318,7 @@ ul {
 	body {
 		overflow-x: hidden;
 	}
-	.section {
+	section {
 		display: inline;
 	}
 	.text {
@@ -371,7 +374,7 @@ ul {
 		align-items: center;
 		margin-bottom: 10%;
 	}
-	.section {
+	section {
 		display: flex;
 		flex-direction: column;
 	}
@@ -398,7 +401,6 @@ ul {
 	.search {
 		background: #ffffff url(images/landscape-sm.png);
 		background-size: cover;
-		height: 60vh;
 	}
 	.search-text {
 		width: 85%;
