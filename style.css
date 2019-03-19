@@ -10,8 +10,9 @@ body {
 	line-height: 1.5;
 	color: #878a8d;
 }
+
 h1 {
-	font-family: 'avenir';
+	font-family: 'avenir','Arial', 'Helvetica';
 	font-size: 4.2rem;
 	padding: 0;
 	margin: 0;
@@ -20,26 +21,29 @@ h1 {
 h3 {
 	margin: 0;
 	font-size: 1.4rem;
-	font-weight: 300;
 	padding-bottom: 1em;
 }
+
 p {
 	margin: 0;
-	padding-bottom: 3em;
 	font-size: 1rem;
+	padding-bottom: 3em;
 	text-align: justify;
 }
+
 div,
 img {
 	padding: 0;
 	margin: 0;
 }
+
 ol,
 ul {
 	padding: 0;
 	margin: 0;
 	text-align: justify;
 }
+
 .btn {
 	display: inline-block;
 	background-color: #4688f1;
@@ -50,13 +54,16 @@ ul {
 	margin: 0.5em 0;
 	font-size: 1rem;
 }
+
 .btn:hover {
 	background: #3877d4;
 	color: #ffffff;
 }
+
 .gray-back {
 	background-color: #f6f6f6;
 }
+
 section {
 	display: flex;
 	flex-wrap: wrap;
@@ -64,15 +71,19 @@ section {
 	align-items: center;
 	width: 100vw;
 }
+
 .text {
 	width: 40%;
 }
+
 .photo {
 	width: 50%;
 }
+
 .margin-r {
 	margin-right: 7%;
 }
+
 .margin-l {
 	margin-left: 7%;
 }
@@ -129,35 +140,39 @@ section {
 	flex-direction: column;
 	margin-top: -50px;
 }
+
 .pixel {
 	padding-top: 50px;
 }
+
 .watch {
 	color: #4688f1;
 	margin: 10px;
 	font-size: 1rem;
 }
+
 .g-logo {
 	width: 80px;
 	margin-bottom: 90px;
 }
+
 .g-logo-gray {
 	width: 110px;
 }
-.avenir {
-	width: 200px;
-	margin-bottom: 30%;
-}
+
 .g-text {
 	width: 25%;
 	z-index: 1;
 }
+
 .g-photo {
 	width: 70%;
 }
+
 .g-margin {
 	margin: 0 0 0 5%;
 }
+
 /* personal section */
 .photo-center {
 	padding: 4%;
@@ -168,10 +183,12 @@ section {
 	background: #ffffff url(images/landscape.png) no-repeat;
 	background-size: cover;
 }
+
 .search h3,
 .search p {
 	color: black;
 }
+
 .search-text {
 	width: 50%;
 	padding: 16% 7%;
@@ -188,37 +205,49 @@ section {
 }
 
 /* responsive section */
-@media (min-width: 950px) and (max-width: 1200px) {
-	/* .search {
-		height: 70vh;
-	} */
+@media (min-width: 950px){
+	.hidden{
+		display:none;
+	}
 }
+
 @media (min-width: 790px) and (max-width: 950px) {
-	h3 {
-		font-size: 1.1rem;
-	}
-	p {
-		font-size: 0.9rem;
-	}
 	h1 {
 		font-size: 3.5rem;
 	}
+
+	h3 {
+		font-size: 1.1rem;
+	}
+
+	p {
+		font-size: 0.9rem;
+	}
+
 	.g-logo {
 		width: 70px;
 		margin-bottom: 70px;
 	}
+
 	.g-logo-gray {
 		width: 90px;
 		margin-bottom: 5px;
 	}
+
 	.avenir {
 		width: 160px;
 		margin-bottom: 20%;
 	}
+
 	.btn {
 		padding: 0.5em 0.8em;
 		font-size: 0.8rem;
 	}
+
+	.hidden{
+		display:none;
+	}
+
 	.watch {
 		font-size: 0.8rem;
 	}
@@ -231,22 +260,26 @@ section {
 		right: 20px;
 		top: 10px;
 	}
+
 	.nav > .nav-btn > label {
 		display: inline-block;
 		width: 50px;
 		height: 50px;
 		padding: 13px;
 	}
+
 	.nav > .nav-btn > label:hover {
 		background-color: rgba(203, 203, 203, 0.3);
 		border-radius: 10px;
 	}
+
 	.nav > .nav-btn > label > span {
 		display: block;
 		width: 25px;
 		height: 10px;
 		border-top: 2px solid #5c5c5c;
 	}
+
 	.nav > .nav-links {
 		position: absolute;
 		display: block;
@@ -259,13 +292,16 @@ section {
 		left: 0px;
 		z-index: 5;
 	}
+
 	.nav > .nav-links > a {
 		display: block;
 		width: 100%;
 	}
+
 	.nav > #nav-check:not(:checked) + .nav-links {
 		height: 0px;
 	}
+
 	.nav > #nav-check:checked + .nav-links {
 		height: calc(100vh - 50px);
 		overflow-y: auto;
@@ -273,42 +309,55 @@ section {
 }
 
 @media (min-width: 590px) and (max-width: 790px) {
-	h3 {
-		font-size: 0.9rem;
-	}
-	p {
-		font-size: 0.7rem;
-	}
+	
 	h1 {
 		font-size: 3rem;
 	}
+	h3 {
+		font-size: 0.9rem;
+	}
+
+	p {
+		font-size: 0.7rem;
+	}
+
 	.g-logo {
 		width: 40px;
 		margin-bottom: 40px;
 	}
+
 	.g-logo-gray {
 		width: 70px;
 		margin-bottom: 5px;
 	}
+
 	.avenir {
 		width: 100px;
 		margin-bottom: 20%;
 	}
+
 	.btn {
 		padding: 0.5em 0.7em;
 		font-size: 0.7rem;
 	}
+
 	.watch {
 		font-size: 0.7rem;
 	}
+
 	.g-text {
 		width: 30%;
 		z-index: 1;
 	}
+
 	.g-photo {
 		width: 60%;
 		height: auto;
 	}
+	.hidden{
+		display:none;
+	}
+
 	.info {
 		font-size: 0.6rem;
 	}
@@ -318,35 +367,41 @@ section {
 	body {
 		overflow-x: hidden;
 	}
+
 	section {
 		display: inline;
 	}
+
 	.text {
 		width: 100%;
 		padding: 10%;
 		background-color: #e3e3e3;
 	}
+
 	.photo {
 		width: 100%;
 	}
+
 	.margin-right {
 		padding: 0;
 	}
+
 	.margin-left {
 		padding: 0;
 	}
-	.search {
-		height: 50vh;
-	}
+	
 	.g-photo {
 		width: 100vw;
 	}
+
 	.margin-l {
 		margin: 0;
 	}
+
 	.margin-r {
 		margin: 0;
 	}
+
 	.sm {
 		width: 100vw;
 	}
@@ -354,39 +409,48 @@ section {
 	h3 {
 		font-size: 0.8rem;
 	}
+
 	p {
 		font-size: 0.7rem;
 	}
+
 	.g-logo {
 		width: 80px;
 		margin-bottom: 40px;
 	}
+
 	.g-logo-gray {
 		width: 100px;
 		margin-bottom: 5px;
 	}
+
 	.g-text {
 		width: 100%;
 	}
+
 	.google {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		margin-bottom: 10%;
 	}
+
 	section {
 		display: flex;
 		flex-direction: column;
 	}
+
 	.avenir {
 		width: 150px;
 		margin-bottom: 10%;
 	}
+
 	.btn {
 		padding: 0.5em 0.9em;
 		font-size: 0.8rem;
 		margin-right: 20px;
 	}
+
 	.watch {
 		font-size: 0.8rem;
 		margin: 0px;
@@ -395,18 +459,22 @@ section {
 	.photo-center {
 		padding: 0;
 	}
+
 	.reverse {
 		flex-direction: column-reverse;
 	}
-	.search {
-		background: #ffffff url(images/landscape-sm.png);
-		background-size: cover;
-	}
+
 	.search-text {
-		width: 85%;
-		padding: 20%;
-		margin: auto;
+		width: 100%;
+		padding: 10%;
+		background-color: #e3e3e3;
+	} 
+
+	.search h3,
+	.search p {
+		color:#878a8d;
 	}
+	
 	.info {
 		font-size: 0.6rem;
 	}
